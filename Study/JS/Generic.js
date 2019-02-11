@@ -47,3 +47,33 @@ for (const v of ['a', 'b', 'c']) {
 for (const [i, v] of ['a', 'b', 'c'].entries()) {
     console.log(i, v);
 }
+console.log('////////////////////////////////////////////');
+//object.values() - returns an array of values
+const people = {
+    name: "Jan",
+    age: 30
+}; //object
+const peoplearr = [1, 2, 3]; //array
+console.log(Object.values(people));
+console.log(Object.values(peoplearr));
+
+//object.entries() - returns an array of key , value pairs
+console.log(Object.entries(people));
+console.log(Object.entries(peoplearr));
+
+console.log('////////////////////////////////////////////');
+//Object.getOwnPropertyDescriptors
+console.log(Object.getOwnPropertyDescriptors(people));
+
+//Object.defineProperties - copies all the default properties also
+const person1 = {
+    set name(newName) {
+        console.log(newName);
+    }
+};
+
+const person3 = {};
+Object.defineProperties(person3, Object.getOwnPropertyDescriptors(person1));
+
+person1.name = 'x';
+person3.name = 'x';
