@@ -15,7 +15,12 @@ let
 const
     - unlike var and let, const cannot be reassigned.
     
+arrow function () =>
+    - arrow function should not be used for object methods and constructors
 
+IIFE
+    - Immediately invocated function expression
+    - ;(function () {})();
 ********************************************************************************/
 
 ////////////////////////////////////
