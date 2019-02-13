@@ -1,5 +1,6 @@
+////////////////////////////////////
 //Async await
-
+////////////////////////////////////
 function doSomethingAsync() {
     return new Promise(resolve => {
         setTimeout(() => resolve('I did something'), 3000);
@@ -17,7 +18,9 @@ doSomething();
 console.log('After');
 console.log('///////////////////////////////////////////////');
 
+////////////////////////////////////
 //Multiple Async functions
+////////////////////////////////////
 function promiseToDoSomething() {
     return new Promise(resolve => {
         setTimeout(() => resolve('I did something'), 2000);
