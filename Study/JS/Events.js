@@ -45,8 +45,8 @@ window.addEventListener('scroll', event => {
 //Event loops - has a control over the events (Sync/Async)
 // priority of execution
 // 1. Event Loops - all the calls are executed
-// 2. Job queues (ES6)
-// 3. Message Queue - all the event callbacks are executed
+// 2. Job queues (ES6) - Promises (Async/await) are executed
+// 3. Message Queue - all the callbacks, plain old async functions (settimeout) are executed
 ///////////////////////////////
 
 //Promises (Async/Await) will be executed just before the settimeout (old async functions) 

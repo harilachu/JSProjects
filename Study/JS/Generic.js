@@ -67,6 +67,20 @@ function arrayex(ar1, ar2) {
 
 arrayex(...funarray);
 
+//////////////////////////////
+//Rest operator - similar to params in C#
+//////////////////////////////
+
+function xyz(x, y, ...z) {
+    console.log(x, ' ', y); // hey hello
+
+    console.log(z); // ["wassup", "goodmorning", "hi", "howdy"]
+    console.log(z[0]); // wassup
+    console.log(z.length); // 4
+}
+
+xyz("hey", "hello", "wassup", "goodmorning", "hi", "howdy");
+
 console.log('////////////////////////////////////////////');
 
 ////////////////////////////////////
@@ -110,4 +124,3 @@ Object.defineProperties(person3, Object.getOwnPropertyDescriptors(person1));
 
 person1.name = 'x';
 person3.name = 'x';
-
